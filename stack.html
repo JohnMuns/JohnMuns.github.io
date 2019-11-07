@@ -49,10 +49,10 @@
 
 
 		push(element){ 
-			if (this.length == 10) 
+			if (this.length >= 10) 
 				return " Overflow"; 
 
-				this.items.push(element);
+				this.items[this.length] = element;
 				this.length++;
 		} 
 
