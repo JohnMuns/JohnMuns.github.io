@@ -63,7 +63,7 @@
  
 		peek() { 
 			if (this.length <= 0) 
-				return "No Element";
+				return "Null";
 			return this.items[this.length-1]; 
 		} 
 
@@ -72,7 +72,7 @@
 		}
 		printlength(){
 			if (this.length <= -1) 
-				return " Underflow";
+				return -1;
 
 			return this.length;
 		} 
@@ -104,7 +104,7 @@
 	document.getElementById('item-input').value = "";
 }
 	function show(){
-		document.getElementById(1).innerHTML ='TOP'+'<br>'+stack.printStack()+'BOTTOM'; 
+		document.getElementById(1).innerHTML ='TOP'+'<br>'+stack.printStack()+'<br>'+'BOTTOM'; 
 	} 
 	  
 	function length(){
